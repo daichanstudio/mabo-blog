@@ -9,11 +9,11 @@ import { getAllBlogs, blogsPerPage } from "../utils/mdQueries"
 const Blog = ({ blogs, numberPages }) => {
   return (
       <Layout>
-          <Seo title="ブログ" description="これはブログページです" /> 
+          <Seo title='Article' description="これはブログページです" /> 
           <div className={style.wrapper}>
             <div className={style.container}>
-              <h1>Blog</h1>
-              <p>エンジニアの日常生活をお届けします</p>
+              <h1>Article</h1>
+              {/* <p>watamasaのブログ！</p> */}
               {blogs.map((blog, index) => {
                   const { title, date, excerpt, image } = blog.frontmatter
                   return(
@@ -25,7 +25,7 @@ const Blog = ({ blogs, numberPages }) => {
                               <Link href={`/blog/${blog.slug}`}><a>Read More</a></Link>
                           </div>
                           <div className={style.cardImg}>
-                              <Image src={image} alt="card-image" height={300} width={1000} quality={90} />
+                              <Image src={image} alt="card-image" height={300} width={700} quality={90} />
                           </div>  
                       </div>
                   )}

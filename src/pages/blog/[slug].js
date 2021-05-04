@@ -12,7 +12,7 @@ const SingleBlog = ({ frontmatter, markdownBody, prev, next }) => {
       <Layout>
           <Seo title={title} description={excerpt} /> 
           <div className={style.hero}>
-              <Image src={image} alt="blog-image" height="500" width="1000" />
+              <Image src={image} alt="blog-image" height="500" width="800" />
           </div>
           <div className={style.wrapper}>  
               <div className={style.container}>               

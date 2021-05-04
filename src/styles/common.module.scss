@@ -6,7 +6,10 @@
     top: 0;
     width: 100%;
     z-index: 1;
-    background-color: #fff;
+    // background-color: #fff;
+    color: #669933;
+    // background-color: #FFFEF6;
+    background-color: #F6F5EA;
     .container {    
         @extend %container;
         .flexContainer {
@@ -22,6 +25,8 @@
             li {
                 display: inline-block;
                 margin: 0 0 0 6rem;
+           
+           
                 @media(max-width: $break-xs){ margin: 0 0 0 4rem; }
             }
         }

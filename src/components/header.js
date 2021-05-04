@@ -8,12 +8,13 @@ const Header = () => {
        <div className={style.container}>
           <div className={style.flexContainer}>
             <Link href="/">
-              <a> 
+            {/* <a> 
                 <Image src="/images/logo.png" alt="logo" width={50} height={50} />
-              </a>
+              </a> */}
+             <h2>ma-bo Blog</h2>
             </Link>
             <ul>
-              <li><Link href="/blog"><a>Blog</a></Link></li>
+              <li><Link href="/blog"><a>Article</a></Link></li>
               <li><Link href="/contact"><a>Contact</a></Link></li>
             </ul>
           </div>

@@ -12,8 +12,7 @@ const PaginationPage = ({ blogs, numberPages }) => {
           <Seo title="ブログ" description="これはブログページです" /> 
           <div className={style.wrapper}>
             <div className={style.container}>
-              <h1>Blog</h1>
-              <p>エンジニアの日常生活をお届けします</p>
+              <h1>Article</h1>
               {blogs.map((blog, index) => {
                   const { title, date, excerpt, image } = blog.frontmatter
                   return(
