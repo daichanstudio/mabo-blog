@@ -10,6 +10,7 @@
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
+    "@zeit/next-sass": "^1.0.1",
     "gray-matter": "^4.0.2",
     "next": "10.0.9",
     "next-images": "^1.7.0",
@@ -17,13 +18,13 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-helmet": "^6.1.0",
-    "react-markdown": "^5.0.3",
-    "url-loader": "^4.1.1"
+    "react-markdown": "^5.0.3"
   },
   "devDependencies": {
     "css-loader": "^5.2.4",
     "sass": "^1.32.12",
     "sass-loader": "^11.0.1",
-    "style-loader": "^2.0.0"
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1"
   }
 }

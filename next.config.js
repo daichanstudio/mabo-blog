@@ -1,3 +1,5 @@
+
+
 module.exports = {
     webpack: function (config) {
         config.module.rules.push({
@@ -8,14 +10,12 @@ module.exports = {
     },
 }
 
-const withImages = require('next-images');
-module.exports = withImages();
 
-//next.config.js
-// const withImages = require('next-images');
-// const withCSS = require('@zeit/next-css');
-
-// module.exports = withImages(withCSS()npm );
+// const withImages = require('next-images')
+// module.exports = withImages({
+//   webpack(config, options) {
+//     return config
+//   }
 
 // const withSass = require('@zeit/next-sass')
 // module.exports = withSass()
