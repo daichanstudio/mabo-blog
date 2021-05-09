@@ -4,7 +4,7 @@ import * as style from "../styles/common.module.scss"
 import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles, createStyles} from '@material-ui/styles';
 // import Dropdown from './dropdown'
-import Back from './baktotopui'
+
 
 
 
@@ -41,7 +41,7 @@ const Header = () => {
 
 
         </div>
-       <Back/>
+
     </div>
   )
 }
