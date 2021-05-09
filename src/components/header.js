@@ -4,6 +4,7 @@ import * as style from "../styles/common.module.scss"
 import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles, createStyles} from '@material-ui/styles';
 // import Dropdown from './dropdown'
+import Ham from './hambuger';
 
 
 
@@ -33,10 +34,12 @@ const Header = () => {
             <ul>
               <li><Link href="/blog"><a>Article</a></Link></li>
               <li><Link href="/contact"><a>Contact</a></Link></li>
+
             </ul>
 
-            <MenuIcon className={classes.button}/>
+            {/* <MenuIcon className={classes.button}/> */}
 {/* <Dropdown/> */}
+           <Ham/>
           </div>
 
 
