@@ -1,4 +1,5 @@
-import "../styles/all.scss" 
+import "../styles/all.scss"
+
 
 
 function MyApp({ Component, pageProps }) {
@@ -11,3 +12,6 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp
+
+
+

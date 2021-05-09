@@ -2,7 +2,7 @@ import Image from 'next/image'
 import ReactMarkdown from 'react-markdown'
 import Layout from "../../components/layout"
 import PrevNext from "../../components/prevNext"
-import Seo from "../../components/seo"  
+import Seo from "../../components/seo"
 import * as style from "../../styles/singleBlog.module.scss"
 import { getAllBlogs, getSingleBlog } from "../../utils/mdQueries"
 
@@ -10,27 +10,28 @@ const SingleBlog = ({ frontmatter, markdownBody, prev, next }) => {
     const { title, date, excerpt, image } = frontmatter
     return (
       <Layout>
-          <Seo title={title} description={excerpt} /> 
+          <Seo title={title} description={excerpt} />
           <div className={style.hero}>
               <Image src={image} alt="blog-image" height="500" width="800" />
+              {/* <Image src={image} alt="blog-image" height="500" width="800" /> */}
           </div>
-          <div className={style.wrapper}>  
-              <div className={style.container}>               
+          <div className={style.wrapper}>
+              <div className={style.container}>
                   <h1>{title}</h1>
-                  <p>{date}</p> 
+                  <p>{date}</p>
                   <ReactMarkdown source={markdownBody} />
-              </div> 
+              </div>
               <PrevNext prev={prev} next={next} />
           </div>
-      </Layout> 
+      </Layout>
     )
 }
 
 export default SingleBlog
 
 export async function getStaticPaths() {
-    const { orderedBlogs } = await getAllBlogs()   
-    const paths = orderedBlogs.map((orderedBlog) => `/blog/${orderedBlog.slug}`)   
+    const { orderedBlogs } = await getAllBlogs()
+    const paths = orderedBlogs.map((orderedBlog) => `/blog/${orderedBlog.slug}`)
 
     return {
         paths: paths,
@@ -39,7 +40,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-    const { singleDocument } = await getSingleBlog(context) 
+    const { singleDocument } = await getSingleBlog(context)
 
     const { orderedBlogs } = await getAllBlogs()
     const prev =  orderedBlogs.filter(orderedBlog => orderedBlog.frontmatter.id === singleDocument.data.id - 1)
@@ -47,10 +48,10 @@ export async function getStaticProps(context) {
 
     return {
       props: {
-        frontmatter: singleDocument.data,         
-        markdownBody: singleDocument.content,   
-        prev: prev, 
-        next: next,  
+        frontmatter: singleDocument.data,
+        markdownBody: singleDocument.content,
+        prev: prev,
+        next: next,
       }
     }
 }

@@ -1,25 +1,48 @@
 import Link from 'next/link'
-import Image from 'next/image'
+
 import * as style from "../styles/common.module.scss"
+import MenuIcon from '@material-ui/icons/Menu';
+import { makeStyles, createStyles} from '@material-ui/styles';
+// import Dropdown from './dropdown'
+import Back from './baktotopui'
+
+
+
+
+
+
+
+import { withTheme } from '@material-ui/core';
+
+const useStyles = makeStyles({
+  button: {
+    fontSize: '40px'
+  }
+});
 
 const Header = () => {
+
+  const classes = useStyles();
   return (
-     <header className={style.headerWrapper}>
+     <div className={style.headerWrapper}>
        <div className={style.container}>
           <div className={style.flexContainer}>
-            <Link href="/">
-            {/* <a> 
-                <Image src="/images/logo.png" alt="logo" width={50} height={50} />
-              </a> */}
+            <Link id="back-to-top-anchor" href="/">
              <h2>ma-bo Blog</h2>
             </Link>
             <ul>
               <li><Link href="/blog"><a>Article</a></Link></li>
               <li><Link href="/contact"><a>Contact</a></Link></li>
             </ul>
+
+            <MenuIcon className={classes.button}/>
+{/* <Dropdown/> */}
           </div>
+
+
         </div>
-    </header>
+       <Back/>
+    </div>
   )
 }
 

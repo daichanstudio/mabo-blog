@@ -1,10 +1,12 @@
-import Link from 'next/link' 
-import Image from 'next/image'  
+import Link from 'next/link'
+import Image from 'next/image'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as style from "../styles/index.module.scss"
-// import ImageList from '@material-ui/core/ImageList';
-// import ImageListItem from '@material-ui/core/ImageListItem';
+import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
+import Back from '../components/backtotop'
+
+
 
 const Index = () => {
   return (
@@ -23,7 +25,7 @@ const Index = () => {
                       <h2>About</h2>
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum!</p>
                   </div>
-                  <Image src="/images/profile.jpg" alt="hero" height={1074} width={700} quality={90} /> 
+                  <Image src="/images/profile.jpg" alt="hero" height={1074} width={700} quality={90} />
               </div>
               {/* <div className={style.skills}>
                   <h2>Skills</h2>
@@ -38,27 +40,29 @@ const Index = () => {
               <div className={style.container}>
               <h2>Photo</h2>
 
-          
-       
-                        <Image src="/images/grid1.jpg" alt="hero" height={350} width={350} quality={90} /> 
-                        <Image src="/images/grid2.jpg" alt="hero" height={350} width={350} quality={90} /> 
-                        <Image src="/images/grid3.jpg" alt="hero" height={350} width={350} quality={90} /> 
-                        <Image src="/images/grid4.jpg" alt="hero" height={350} width={350} quality={90} /> 
-                        <Image src="/images/grid5.jpg" alt="hero" height={350} width={350} quality={90} /> 
-                        <Image src="/images/grid6.jpg" alt="hero" height={350} width={350} quality={90} /> 
-                        <Image src="/images/grid7.jpg" alt="hero" height={350} width={350} quality={90} /> 
-                        <Image src="/images/grid8.jpg" alt="hero" height={350} width={350} quality={90} /> 
-                        <Image src="/images/grid9.jpg" alt="hero" height={350} width={350} quality={90} /> 
-                        <Image src="/images/grid10.jpg" alt="hero" height={350} width={350} quality={90} /> 
-             
-            
+
+
+                        <Image src="/images/grid1.jpg" alt="hero" height={350} width={350} quality={90} />
+                        <Image src="/images/grid2.jpg" alt="hero" height={350} width={350} quality={90} />
+                        <Image src="/images/grid3.jpg" alt="hero" height={350} width={350} quality={90} />
+                        <Image src="/images/grid4.jpg" alt="hero" height={350} width={350} quality={90} />
+                        <Image src="/images/grid5.jpg" alt="hero" height={350} width={350} quality={90} />
+                        <Image src="/images/grid6.jpg" alt="hero" height={350} width={350} quality={90} />
+                        <Image src="/images/grid7.jpg" alt="hero" height={350} width={350} quality={90} />
+                        <Image src="/images/grid8.jpg" alt="hero" height={350} width={350} quality={90} />
+                        <Image src="/images/grid9.jpg" alt="hero" height={350} width={350} quality={90} />
+                        <Image src="/images/grid10.jpg" alt="hero" height={350} width={350} quality={90} />
+
+
               </div>
-         
-                 
+
+
               <div className={style.ctaButton}>
                   <Link href="/contact"><a>Contact me</a></Link>
               </div>
+              {/* <Back className={style.back}/> */}
           </div>
+
       </Layout>
   )
 }

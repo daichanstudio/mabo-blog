@@ -1,15 +1,16 @@
+import {GetStaticProps} from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Pagination from "../components/pagination" 
+import Pagination from "../components/pagination"
 import * as style from "../styles/blog.module.scss"
 import { getAllBlogs, blogsPerPage } from "../utils/mdQueries"
 
 const Blog = ({ blogs, numberPages }) => {
   return (
       <Layout>
-          <Seo title='Article' description="これはブログページです" /> 
+          <Seo title='Article' description="これはブログページです" />
           <div className={style.wrapper}>
             <div className={style.container}>
               <h1>Article</h1>
@@ -17,7 +18,7 @@ const Blog = ({ blogs, numberPages }) => {
               {blogs.map((blog, index) => {
                   const { title, date, excerpt, image } = blog.frontmatter
                   return(
-                      <div key={index} className={style.blogCard}>                            
+                      <div key={index} className={style.blogCard}>
                           <div className={style.textContainer}>
                               <h3>{title}</h3>
                               <p>{excerpt}</p>
@@ -26,12 +27,12 @@ const Blog = ({ blogs, numberPages }) => {
                           </div>
                           <div className={style.cardImg}>
                               <Image src={image} alt="card-image" height={300} width={700} quality={90} />
-                          </div>  
+                          </div>
                       </div>
                   )}
               )}
               </div>
-              <Pagination numberPages={numberPages} /> 
+              <Pagination numberPages={numberPages} />
           </div>
       </Layout>
   )
@@ -39,15 +40,17 @@ const Blog = ({ blogs, numberPages }) => {
 
 export default Blog
 
-export async function getStaticProps() { 
-    const { orderedBlogs, numberPages } = await getAllBlogs() 
+
+
+export async function getStaticProps() {
+    const { orderedBlogs, numberPages } = await getAllBlogs()
 
     const limitedBlogs = orderedBlogs.slice(0, blogsPerPage)
 
-    return {            
+    return {
         props: {
-            blogs: limitedBlogs, 
+            blogs: limitedBlogs,
             numberPages: numberPages,
-        },      
-    }                   
-} 
+        },
+    }
+}
