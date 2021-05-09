@@ -16,6 +16,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import Link from 'next/link'
 
 const drawerWidth = 240;
 
@@ -122,12 +123,17 @@ export default function PersistentDrawerRight() {
 
 
         <List>
-          {['Article', 'Contact'].map((text, index) => (
+          {/* {['Article', 'Contact'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
-          ))}
+          ))} */}
+          <ListItem><Link href="/blog"><a>Article</a></Link></ListItem>
+          <ListItem>   <Link href="/contact"><a>Contact</a></Link></ListItem>
+
+
+
         </List>
       </Drawer>
     </div>
