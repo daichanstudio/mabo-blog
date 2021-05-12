@@ -6,6 +6,9 @@ import Seo from "../../components/seo"
 import * as style from "../../styles/singleBlog.module.scss"
 import { getAllBlogs, getSingleBlog } from "../../utils/mdQueries"
 
+
+
+
 const SingleBlog = ({ frontmatter, markdownBody, prev, next }) => {
     const { title, date, excerpt, image } = frontmatter
     return (
@@ -19,6 +22,9 @@ const SingleBlog = ({ frontmatter, markdownBody, prev, next }) => {
               <div className={style.container}>
                   <h1>{title}</h1>
                   <p>{date}</p>
+
+
+
                   <ReactMarkdown source={markdownBody} />
               </div>
               <PrevNext prev={prev} next={next} />

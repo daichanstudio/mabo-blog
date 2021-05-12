@@ -9,10 +9,6 @@ const Footer = () => {
     return (
         <footer className={style.footerWrapper}>
             <div className={style.insideContainer}>
-                {/* <a href="https://www.google.com/"><img src="/images/github.svg" alt="logo"/></a>
-                <a href="https://www.google.com/"><img src="/images/linkedin.svg" alt="logo"/></a>
-                <a href="https://www.google.com/"><img src="/images/twitter.svg" alt="logo"/></a>
-                <a href="https://www.google.com/"><img src="/images/facebook.svg" alt="logo"/></a> */}
                 <FacebookIcon style={{ fontSize: 40, color: '#fcfff9'}}/>
                 <InstagramIcon style={{ fontSize: 40, color: '#fcfff9'}}/>
                 <TwitterIcon style={{ fontSize: 40, color: '#fcfff9'}}/>
@@ -21,7 +17,7 @@ const Footer = () => {
 
                 <hr/>
                 <Link href="/blog"><a>Article</a></Link>
-                <Link href="/contact"><a>Contact</a></Link>
+                <Link href="/contact"><a>Gallery</a></Link>
                 <p>©{new Date().getFullYear()} ma-bo</p>
             </div>
         </footer>

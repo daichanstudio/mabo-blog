@@ -6,7 +6,7 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 const PrevNext =(props) => {
     return (
         <div className={style.pnWrapper}>
-            {0 < props.prev.length && 
+            {0 < props.prev.length &&
                 <Link href={`/blog/${props.prev[0].slug}`}>
                     <a className={style.linkCard}>
                         {/* <img src="/images/arrow-left.svg" alt="arrow-left"/> */}
@@ -15,12 +15,12 @@ const PrevNext =(props) => {
                     </a>
                 </Link>
             }
-            {0 < props.next.length && 
+            {0 < props.next.length &&
                 <Link href={`/blog/${props.next[0].slug}`}>
                     <a className={style.linkCard}>
                         <h3>{props.next[0].frontmatter.title}</h3>
                         {/* <img src="/images/arrow-right.svg" alt="arrow-right" className="arrow-right"/> */}
-                        <ArrowForwardIosIcon  style={{ fontSize: 30 }} />
+                        <ArrowForwardIosIcon  style={{ fontSize: 30}} />
                     </a>
                 </Link>
             }
@@ -28,4 +28,4 @@ const PrevNext =(props) => {
     )
 }
 
-export default PrevNext 
+export default PrevNext

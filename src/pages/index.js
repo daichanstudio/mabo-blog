@@ -3,6 +3,11 @@ import Image from 'next/image'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as style from "../styles/index.module.scss"
+import  Swiper from '../components/swipper'
+
+
+
+
 
 
 
@@ -56,14 +61,23 @@ const Index = () => {
               </div>
 
 
-              <div className={style.ctaButton}>
-                  <Link href="/contact"><a>Contact me</a></Link>
-              </div>
               {/* <Back className={style.back}/> */}
           </div>
 
+
+
+
+<Swiper/>
       </Layout>
+
+
+
   )
+
+
+
+
+
 }
 
 export default Index

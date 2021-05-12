@@ -3,7 +3,7 @@ id: 8
 uid: 8
 title: "8つ目の記事"
 date: "2021-05-08"
-image: /images/pic12.jpg
+image: /images/pic6.jpg
 excerpt: 東京生まれのコンプレックス.
 ---
 ## 東京生まれのコンプレックス
