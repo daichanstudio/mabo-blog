@@ -12,7 +12,7 @@ const Header = () => {
        <div className={style.container}>
           <div className={style.flexContainer}>
             <Link id="back-to-top-anchor" href="/">
-             <h2>ma-bo Blog</h2>
+             <h2>マボログ</h2>
             </Link>
             <ul>
               <li><Link href="/blog"><a>Article</a></Link></li>
@@ -30,3 +30,5 @@ const Header = () => {
 }
 
 export default Header
+
+

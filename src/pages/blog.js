@@ -24,20 +24,24 @@ const Blog = ({ blogs, numberPages }) => {
                   const { title, date, excerpt, image } = blog.frontmatter
                   return(
                       <div key={index} className={style.blogCard}>
-                          <div className={style.textContainer}>
-                           <p>{date}</p>
 
-                              <h3>{title}</h3>
-                              <p>{excerpt}</p>
+
+
+                              <div className={style.cardImg}>
+                              <Image src={image} alt="card-image" height={300} width={800} quality={90} />
+                          </div>
+                          <div className={style.textContainer}>
+                          <p>{excerpt}</p>
+
+                              <p>{date}</p>
+
 
                               <Link href={`/blog/${blog.slug}`}>
                                   <a>Read More  <ArrowForwardIosIcon style={{ fontSize: '2rem', paddingLeft: 3} }/></a>
                                   </Link>
 
                           </div>
-                          <div className={style.cardImg}>
-                              <Image src={image} alt="card-image" height={300} width={700} quality={90} />
-                          </div>
+
                       </div>
                   )}
               )}

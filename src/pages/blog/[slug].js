@@ -5,6 +5,7 @@ import PrevNext from "../../components/prevNext"
 import Seo from "../../components/seo"
 import * as style from "../../styles/singleBlog.module.scss"
 import { getAllBlogs, getSingleBlog } from "../../utils/mdQueries"
+import {ShareButton} from "../../components/sharebutton"
 
 
 
@@ -20,13 +21,16 @@ const SingleBlog = ({ frontmatter, markdownBody, prev, next }) => {
           </div>
           <div className={style.wrapper}>
               <div className={style.container}>
-                  <h1>{title}</h1>
+                  {/* <h1>{title}</h1> */}
                   <p>{date}</p>
 
 
 
                   <ReactMarkdown source={markdownBody} />
+
               </div>
+
+
               <PrevNext prev={prev} next={next} />
           </div>
       </Layout>

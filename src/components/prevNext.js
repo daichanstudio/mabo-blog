@@ -9,17 +9,20 @@ const PrevNext =(props) => {
             {0 < props.prev.length &&
                 <Link href={`/blog/${props.prev[0].slug}`}>
                     <a className={style.linkCard}>
-                        {/* <img src="/images/arrow-left.svg" alt="arrow-left"/> */}
+
                         <ArrowBackIosIcon  style={{ fontSize: 30 }} />
-                        <h3> {props.prev[0].frontmatter.title}</h3>
+                        {/* <h3> {props.prev[0].frontmatter.title}</h3> */}
+                        <h3>Back</h3>
+
                     </a>
                 </Link>
             }
             {0 < props.next.length &&
                 <Link href={`/blog/${props.next[0].slug}`}>
                     <a className={style.linkCard}>
-                        <h3>{props.next[0].frontmatter.title}</h3>
-                        {/* <img src="/images/arrow-right.svg" alt="arrow-right" className="arrow-right"/> */}
+                        {/* <h3>{props.next[0].frontmatter.title}</h3> */}
+                        <h3>Next</h3>
+
                         <ArrowForwardIosIcon  style={{ fontSize: 30}} />
                     </a>
                 </Link>
