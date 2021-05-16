@@ -3,12 +3,6 @@ import Image from 'next/image'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as style from "../styles/index.module.scss"
-import  Swiper from '../components/swipper'
-
-
-
-
-
 
 
 
@@ -29,9 +23,6 @@ const Index = () => {
                       <h2>マボログとは</h2>
                       <p>旅やファッションを中心としたライフスタイルを面白おかしく伝える雑記帳</p>
                   </div>
-
-
-                  {/* <Image src="/images/profile.jpg" alt="hero" height={1074} width={700} quality={90} /> */}
               </div>
 
 
@@ -80,24 +71,6 @@ const Index = () => {
           </div>
           <br/>
 
-              {/* <div className={style.container}>
-              <h2>Photo</h2>
-
-
-
-                        <Image src="/images/grid1.jpg" alt="hero" height={350} width={350} quality={90} />
-                        <Image src="/images/grid2.jpg" alt="hero" height={350} width={350} quality={90} />
-                        <Image src="/images/grid3.jpg" alt="hero" height={350} width={350} quality={90} />
-                        <Image src="/images/grid4.jpg" alt="hero" height={350} width={350} quality={90} />
-                        <Image src="/images/grid5.jpg" alt="hero" height={350} width={350} quality={90} />
-                        <Image src="/images/grid6.jpg" alt="hero" height={350} width={350} quality={90} />
-                        <Image src="/images/grid7.jpg" alt="hero" height={350} width={350} quality={90} />
-                        <Image src="/images/grid8.jpg" alt="hero" height={350} width={350} quality={90} />
-                        <Image src="/images/grid9.jpg" alt="hero" height={350} width={350} quality={90} />
-                        <Image src="/images/grid10.jpg" alt="hero" height={350} width={350} quality={90} />
-
-
-              </div> */}
 
 
 
@@ -107,7 +80,7 @@ const Index = () => {
 
 
 
-{/* <Swiper/> */}
+
       </Layout>
 
 
