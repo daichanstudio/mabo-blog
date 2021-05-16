@@ -11,12 +11,12 @@ const Header = () => {
      <div className={style.headerWrapper}>
        <div className={style.container}>
           <div className={style.flexContainer}>
-            <Link id="back-to-top-anchor" href="/">
-             <h2>マボログ</h2>
+            <Link href="/">
+             <h1 className={style.title}>マボログ</h1>
             </Link>
             <ul>
               <li><Link href="/blog"><a>Article</a></Link></li>
-              <li><Link href="/contact"><a>Gallery</a></Link></li>
+              <li><Link href="/gallery"><a>Gallery</a></Link></li>
 
             </ul>
 

@@ -17,7 +17,7 @@ const Footer = () => {
 
                 <hr/>
                 <Link href="/blog"><a>Article</a></Link>
-                <Link href="/contact"><a>Gallery</a></Link>
+                <Link href="/gallery"><a>Gallery</a></Link>
                 <p>©{new Date().getFullYear()} ma-bo</p>
             </div>
         </footer>

@@ -10,6 +10,8 @@
     background-color: #F6F5EA;
 
 
+
+
     .container {
         @extend %container;
         .flexContainer {
@@ -19,10 +21,22 @@
             align-items: center;
             height: 70px;
             justify-content: space-between;
+
+
+
+            .title {
+                font-weight: bold;
+            }
+
+
             a {
                 color: inherit;
                 font-weight: 500;
                 font-size: 20px;
+                &:hover {
+                    border-bottom: 1px solid #FFFFBB;;
+                    }
+
             }
             li {
                 display: inline-block;

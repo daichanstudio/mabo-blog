@@ -130,7 +130,7 @@ export default function PersistentDrawerRight() {
             </ListItem>
           ))} */}
           <ListItem><Link href="/blog"><a>Article</a></Link></ListItem>
-          <ListItem>   <Link href="/contact"><a>Contact</a></Link></ListItem>
+          <ListItem>   <Link href="/gallery"><a>Contact</a></Link></ListItem>
 
 
 

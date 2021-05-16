@@ -18,31 +18,31 @@ const Blog = ({ blogs, numberPages }) => {
           <Seo title='Article' description="これはブログページです" />
           <div className={style.wrapper}>
             <div className={style.container}>
-              <h1>Article</h1>
-              {/* <p>watamasaのブログ！</p> */}
+              {/* <h1>Article</h1> */}
               {blogs.map((blog, index) => {
                   const { title, date, excerpt, image } = blog.frontmatter
                   return(
-                      <div key={index} className={style.blogCard}>
+
+                  <div key={index} className={style.blogCard}>
+                         <div className={style.cardImg}>
+                      <Image src={image} alt="card-image" height={300} width={800} quality={90} />
+                        </div>
+
+                  <div className={style.textContainer}>
+                    <p className={style.title}>{excerpt}</p>
+                    <p className={style.date}>{date}</p>
+                    <Link href={`/blog/${blog.slug}`}>
+                      <a>Read More  <ArrowForwardIosIcon style={{ fontSize: '2rem', paddingLeft: 3} }/></a>
+                    </Link>
+
+                  </div>
 
 
 
-                              <div className={style.cardImg}>
-                              <Image src={image} alt="card-image" height={300} width={800} quality={90} />
-                          </div>
-                          <div className={style.textContainer}>
-                          <p>{excerpt}</p>
-
-                              <p>{date}</p>
 
 
-                              <Link href={`/blog/${blog.slug}`}>
-                                  <a>Read More  <ArrowForwardIosIcon style={{ fontSize: '2rem', paddingLeft: 3} }/></a>
-                                  </Link>
 
-                          </div>
-
-                      </div>
+                </div>
                   )}
               )}
               </div>
@@ -68,3 +68,18 @@ export async function getStaticProps() {
         },
     }
 }
+
+
+<div class="grid-content flex-container is-align-items-flex-end">
+    <div class="grid-title ">
+      <div class="label">
+        <p><b>LIFESTYLE</b></p>
+      </div>
+      <p class="headline"><b>TOWN TALK RADIO Vol.5 by メトロノリ</b></p>
+              <div class="sub-headline">
+          <div>
+            <p><b>BGM配信／テーマ: 丸ノ内線</b></p>
+          </div>
+        </div>
+          </div>
+  </div>

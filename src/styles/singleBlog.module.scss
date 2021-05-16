@@ -6,9 +6,20 @@
 
 .wrapper {
     padding: 5rem 0 10rem;
+    font-family: 'Noto Sans JP', sans-serif;
     .container {
         @extend %container;
     }
+
+    .share {
+ font-weight: bold;
+  margin-top: 5rem;
+   text-align: center;
+
+
+    }
+
+
     @media(max-width: $break-s) {
         padding: 2rem 0 10rem;
     }

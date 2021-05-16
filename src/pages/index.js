@@ -18,31 +18,69 @@ const Index = () => {
           <Seo title="Watanabe Masamitsu" description="Watanabe Masamitsuのポートフォリオサイトです" />
           <div className={style.hero}>
               <Image src="/images/index-hero.jpg" alt="hero" layout="fill" objectFit="cover" quality={90} />
-              {/* <div className={style.textContainer}> */}
-                  {/* <h1>ma-bo blog</h1> */}
-                  {/* <h3>これはデモだよ！</h3> */}
-              {/* </div> */}
+              {/* <div className={style.textContainer}>
+                 <h1>ma-bo blog</h1>
+                  <h3>これはデモだよ！</h3>
+         </div> */}
           </div>
           <div className={style.container}>
               <div className={style.profile}>
                   <div>
                       <h2>マボログとは</h2>
-                      {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum!</p> */}
                       <p>旅やファッションを中心としたライフスタイルを面白おかしく伝える雑記帳</p>
                   </div>
-                  <Image src="/images/profile.jpg" alt="hero" height={1074} width={700} quality={90} />
-              </div>
-              {/* <div className={style.skills}>
-                  <h2>Skills</h2>
-                  <div className={style.skillsContainer}>
-                      <div><img src="/images/javascript.svg" alt="javascript"/><span>JavaScript / 10 years</span></div>
-                      <div><img src="/images/react.svg"alt="react"/><span>React / 5 years</span></div>
-                      <div><img src="/images/gatsby.svg" alt="gatsby"/><span>Gatsby / 3 years</span></div>
-                      <div><img src="/images/next.svg" alt="next"/><span>Next.JS / 3 years</span></div>
-                  </div>
-              </div> */}
 
-              <div className={style.container}>
+
+                  {/* <Image src="/images/profile.jpg" alt="hero" height={1074} width={700} quality={90} /> */}
+              </div>
+
+
+
+
+
+          <div className={style.title}>
+      <div className={style.label}>
+        <p><b>LIFESTYLE</b></p>
+      </div>
+      <Image src="/images/pic4.jpg" alt="hero" height={350} width={380} quality={90} />
+      <p className={style.headline}><b>My hometown is Tokyo</b></p>
+              <div className={style.subHeadline}>
+          <div>
+            <p><b>シティーボーイの日常</b></p>
+          </div>
+        </div>
+          </div>
+
+<br/>
+
+<div className={style.title}>
+      <div className={style.label}>
+        <p><b>TRIP</b></p>
+      </div>
+      <Image src="/images/grid8.jpg" alt="hero" height={350} width={380} quality={90} />
+      <p className={style.headline}><b>My hobby is travelling</b></p>
+              <div className={style.subHeadline}>
+          <div>
+            <p><b>会いたくてたまらないから、旅に出た！</b></p>
+          </div>
+        </div>
+          </div>
+          <br/>
+          <div className={style.title}>
+      <div className={style.label}>
+        <p><b>FASSION</b></p>
+      </div>
+      <Image src="/images/pic14.jpg" alt="hero" height={350} width={380} quality={90} />
+      <p className={style.headline}><b>My Favorite Things</b></p>
+              <div className={style.subHeadline}>
+          <div>
+            <p><b>欲しいものが、いっぱいだ！</b></p>
+          </div>
+        </div>
+          </div>
+          <br/>
+
+              {/* <div className={style.container}>
               <h2>Photo</h2>
 
 
@@ -59,16 +97,17 @@ const Index = () => {
                         <Image src="/images/grid10.jpg" alt="hero" height={350} width={350} quality={90} />
 
 
-              </div>
+              </div> */}
 
 
-              {/* <Back className={style.back}/> */}
+
+
           </div>
 
 
 
 
-<Swiper/>
+{/* <Swiper/> */}
       </Layout>
 
 

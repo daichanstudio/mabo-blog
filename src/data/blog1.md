@@ -1,7 +1,7 @@
 ---
-id: 7
-uid: 7
-title: "7つ目の記事"
+id: 1
+uid: 1
+title: "1つ目の記事"
 date: "2021-05-05"
 image: /images/pic11.jpg
 excerpt: コンバースのジャックパーセル

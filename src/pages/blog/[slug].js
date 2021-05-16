@@ -5,7 +5,7 @@ import PrevNext from "../../components/prevNext"
 import Seo from "../../components/seo"
 import * as style from "../../styles/singleBlog.module.scss"
 import { getAllBlogs, getSingleBlog } from "../../utils/mdQueries"
-import {ShareButton} from "../../components/sharebutton"
+import ShareButton from "../../components/ShareButton";
 
 
 
@@ -28,7 +28,15 @@ const SingleBlog = ({ frontmatter, markdownBody, prev, next }) => {
 
                   <ReactMarkdown source={markdownBody} />
 
+
+
               </div>
+              <div className={style.share}>
+              <p> - Share -</p>
+              <ShareButton
+    url={`https://mabo-blog.vercel.app/`}
+              />
+            </div>
 
 
               <PrevNext prev={prev} next={next} />
