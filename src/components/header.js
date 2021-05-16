@@ -12,7 +12,7 @@ const Header = () => {
        <div className={style.container}>
           <div className={style.flexContainer}>
             <Link href="/">
-             <h1 className={style.title}>マボログ</h1>
+             <h2 className={style.title}>マボログ</h2>
             </Link>
             <ul>
               <li><Link href="/blog"><a>Article</a></Link></li>
